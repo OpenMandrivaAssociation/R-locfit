@@ -4,7 +4,7 @@
 Name:             R-%{packname}
 Version:          1.5_6
 Release:          1
-Summary:          Local Regression, Likelihood and Density Estimation.
+Summary:          Local Regression, Likelihood and Density Estimation
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
