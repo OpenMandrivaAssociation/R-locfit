@@ -9,10 +9,9 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.5-6.tar.gz
-Requires:         R-akima R-lattice 
-Requires:         R-gam 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-akima R-lattice
-BuildRequires:    R-gam 
+Requires:         R-akima R-lattice R-gam
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-akima R-lattice R-gam
 
 %description
 Local regression, likelihood and density estimation.
