@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.5_6
-Release:          2
+Version:          19980714.2
+Release:          1
 Summary:          Local Regression, Likelihood and Density Estimation
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.5-6.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/Archive/locfit/locfit_19980714-2.tar.gz
 Requires:         R-akima R-lattice R-gam
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex
 BuildRequires:    R-akima R-lattice R-gam
@@ -42,3 +42,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
