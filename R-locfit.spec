@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.5_6
-Release:          2
+Release:          3
 Summary:          Local Regression, Likelihood and Density Estimation
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
