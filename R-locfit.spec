@@ -1,6 +1,8 @@
 %global packname  locfit
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
 Version:          19980714.2
 Release:          1
@@ -9,9 +11,10 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/Archive/locfit/locfit_19980714-2.tar.gz
-Requires:         R-akima R-lattice R-gam
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-akima R-lattice R-gam
+Requires:         R-akima R-lattice 
+Requires:         R-gam 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-akima R-lattice
+BuildRequires:    R-gam 
 
 %description
 Local regression, likelihood and density estimation.
@@ -42,4 +45,13 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5_6-2
++ Revision: 776583
+- Rebuild.
+- Import R-locfit
+- Import R-locfit
+
 
